@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'tabs/tab_one.dart';
 import 'tabs/tab_two.dart';
 import 'tabs/tab_three.dart';
+import 'tabs/tab_four.dart';
 import 'pages/notification_page.dart';
 
 class HomeActivity extends StatefulWidget {
@@ -49,7 +50,7 @@ class _HomeActivityState extends State<HomeActivity> {
       const Center(
         child: Padding(
           padding: EdgeInsets.all(20),
-          child: Text("Tab 4 - Pages (coming soon)", style: TextStyle(fontSize: 18)),
+          child: TabFour(),
         ),
       ),
     ];

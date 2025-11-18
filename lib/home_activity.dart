@@ -4,7 +4,7 @@ import 'tabs/tab_two.dart';
 import 'tabs/tab_three.dart';
 import 'tabs/tab_four.dart';
 import 'pages/notification_page.dart';
-
+import 'pages/charts_screen.dart';
 class HomeActivity extends StatefulWidget {
   const HomeActivity({super.key});
 
@@ -73,7 +73,36 @@ class _HomeActivityState extends State<HomeActivity> {
             )
           ],
         ),
+
         body: pages[_currentIndex],
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              DrawerHeader(
+                  padding: EdgeInsets.all(0),
+                  child: UserAccountsDrawerHeader(
+                    decoration: BoxDecoration(color: Colors.green),
+                    accountName: Text("Flutter",style: TextStyle(color: Colors.white)),
+                    accountEmail: Text("flutter@.com",style: TextStyle(color: Colors.black)),
+                    currentAccountPicture: Image.network("https://storage.googleapis.com/cms-storage-bucket/a9d6ce81aee44ae017ee.png")
+
+                  )
+              ),
+
+              ListTile(
+                leading: const Icon(Icons.show_chart),
+                title: const Text('View Charts'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ChartsScreen()),
+                  );
+                },
+              )],
+          ),
+
+        ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           type: BottomNavigationBarType.fixed,

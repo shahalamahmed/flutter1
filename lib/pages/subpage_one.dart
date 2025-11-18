@@ -13,10 +13,7 @@ class SubPageOne extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // 7. Widget: Image from Asset
-            // IMPORTANT: Make sure you have an image in your assets/ folder
-            // and the path is correctly added in pubspec.yaml.
-            // Example path: 'assets/sample_asset.jpg'
+
             const Text(
               'Image from Asset:',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -28,8 +25,7 @@ class SubPageOne extends StatelessWidget {
               color: Colors.grey[200],
               child: const Center(
                 child: Text('Add Asset Image Here', textAlign: TextAlign.center),
-                // Replace with actual Image.asset when ready:
-                // Image.asset('assets/sample_asset.jpg', fit: BoxFit.cover),
+
               ),
             ),
             const SizedBox(height: 30),

@@ -9,7 +9,7 @@ class ChartsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Dummy Data Pie Chart and Bar Chart')),
+      appBar: AppBar(title: const Text('Dummy Data Pie Chart')),
       body: Center(
         child: SizedBox(
           width: 200,

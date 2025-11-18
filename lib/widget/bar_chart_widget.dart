@@ -16,7 +16,7 @@ class BarChartWidget extends StatelessWidget {
   Widget build(BuildContext context ) => BarChart(
       BarChartData(
         alignment: BarChartAlignment.center,
-        maxY: 20,
+        maxY: 26,
          minY: -20,
         groupsSpace: 12,
         barTouchData: BarTouchData(enabled: true),

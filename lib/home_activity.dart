@@ -99,6 +99,7 @@ class _HomeActivityState extends State<HomeActivity> {
                     MaterialPageRoute(builder: (context) => const ChartsScreen()),
                   );
                 },
+
               )],
           ),
 

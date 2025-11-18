@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter1/pages/bar_charts_screen.dart';
 import 'tabs/tab_one.dart';
 import 'tabs/tab_two.dart';
 import 'tabs/tab_three.dart';
@@ -99,8 +100,20 @@ class _HomeActivityState extends State<HomeActivity> {
                     MaterialPageRoute(builder: (context) => const ChartsScreen()),
                   );
                 },
+              ),
 
-              )],
+              ListTile(
+                leading: const Icon(Icons.bar_chart),
+                title: const Text('Bar Charts'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const BarChartsScreen()),
+                  );
+                },
+              ),
+            ],
           ),
 
         ),

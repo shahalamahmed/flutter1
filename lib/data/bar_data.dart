@@ -14,7 +14,7 @@ class BarDataSet {
     Data(
       id: 1,
       name: 'Tue',
-      y: 18,
+      y: -18,
       color: Color(0xfff99c2f),
     ),
     Data(
@@ -26,13 +26,31 @@ class BarDataSet {
     Data(
       id: 3,
       name: 'Thu',
-      y: 20,
+      y: -20,
       color: Color(0xff9575cd),
     ),
     Data(
       id: 4,
       name: 'Fri',
-      y: 25,
+      y: 19,
+      color: Color(0xff4caf50),
+    ),
+    Data(
+      id: 5,
+      name: 'Fri',
+      y: 15,
+      color: Color(0xff4caf50),
+    ),
+    Data(
+      id: 6,
+      name: 'Fri',
+      y: -12,
+      color: Color(0xff4caf50),
+    ),
+    Data(
+      id: 7,
+      name: 'Fri',
+      y: -20,
       color: Color(0xff4caf50),
     ),
   ];

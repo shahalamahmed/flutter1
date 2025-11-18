@@ -16,7 +16,12 @@ class BarChartsScreen extends StatelessWidget{
     BarChartData(
       alignment: BarChartAlignment.center,
       maxY: 20,
-      minY: _20,
+      minY: -20,
+      groupsSpace: 12,
+      barTouchData: BarTouchData(enabled: true),
+      barGroups: BarData.barData.map(
+          (data) =>
+      ).toList(),
     )
   );
 }
